@@ -1,4 +1,4 @@
-// Initialize tasks from LocalStorage or create an empty array
+
 let tasks = JSON.parse(localStorage.getItem('tasks')) || { todo: [], doing: [], done: [] };
 
 function addTask() {
@@ -6,20 +6,20 @@ function addTask() {
     const taskText = taskInput.value.trim();
 
     if (taskText !== '') {
-        // Create a task object with a unique ID and the initial state "To Do"
+        
         const taskId = Date.now();
         const task = { id: taskId, text: taskText, state: 'todo' };
 
-        // Add the task to the "To Do" column
+        
         tasks.todo.push(task);
 
-        // Save tasks to LocalStorage
+        
         localStorage.setItem('tasks', JSON.stringify(tasks));
 
-        // Create a task card and append it to the "To Do" column
+        
         createTaskCard(task, 'todo');
 
-        // Clear the input field
+        
         taskInput.value = '';
     }
 }
@@ -42,7 +42,7 @@ function createTaskCard(task, columnId) {
     taskColumn.appendChild(taskCard);
 }
 
-// Load existing tasks from LocalStorage and create task cards
+
 function loadTasks() {
     for (const columnId in tasks) {
         const column = tasks[columnId];
@@ -70,7 +70,7 @@ function moveUp(button) {
             break;
     }
 
-    // Update LocalStorage
+    
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
     const targetColumnId = getNextColumnId(taskState, 'up');
@@ -95,7 +95,7 @@ function moveDown(button) {
             break;
     }
 
-    // Update LocalStorage
+    
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
     const targetColumnId = getNextColumnId(taskState, 'down');
@@ -107,13 +107,13 @@ function deleteTask(button) {
     const taskId = taskCard.getAttribute('data-task-id');
     const taskState = taskCard.getAttribute('data-task-state');
 
-    // Remove the task from the tasks array
+    
     tasks[taskState] = tasks[taskState].filter(task => task.id !== +taskId);
 
-    // Update LocalStorage
+    
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
-    // Remove the task card from the column
+    
     taskCard.remove();
 }
 

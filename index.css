@@ -138,13 +138,13 @@ input[type="text"] {
     flex-direction: column;
 }
 
-/* Estilos para el texto de la tarea */
+
 .task-card .task-text {
     flex: 1;
     margin-bottom: 10px;
 }
 
-/* Estilos para los botones de acción */
+/* los botones de acción */
 .task-card .task-actions {
     display: flex;
     justify-content: flex-end;
