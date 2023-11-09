@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    
+}
+.contenedor-grande{
+    margin: 5px;
+    max-width: 40%;
+    padding: 5px;
+    float: left;
+    border-radius: 15px;
+}
+.container {
+    margin: 3px;
+    padding: 20px;
+    background-color: rgb(230, 232, 238);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(156, 156, 156, 0.2);
+    text-align: left;
+}
+.contenedorlado{
+    max-width: 55%;
+    float: left;
+    border-radius: 15px;
+    min-height: 600px;
+}
+.tareas2{
+    width: 800px;
+    height: 600px;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    
+}
+
+.tareas{
+    padding: 15px;
+    height: 400px;
+    max-height: 100%;
+    border-radius: 15px;
+    text-align: left;
+    
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.agregar{
+    background-color: #4992e0;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    
+    
+}
+.move-up{
+    background-color: #4992e0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 3px;
+    font-size: 16px;
+    
+
+}
+
+.move-down{
+    background-color: rgb(158, 25, 65);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin: 3px;
+    font-size: 16px;
+}
+
+.delete{
+    background-color: rgb(202, 202, 202);
+    color: #727272;
+    border: none;
+    border-radius: 5px;
+    margin: 3px;
+    font-size: 16px;
+} 
+
+.task-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.task-column {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(230, 232, 238);
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    border: none;
+    min-height: 300px;
+    box-shadow: 0 0 10px rgba(18, 31, 104, 0.377);
+}
+.task-column2 {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(230, 232, 238);
+    border: none;
+    border-radius: 15px;
+    min-height: 510px;
+    box-shadow: 0 0 10px rgba(18, 31, 104, 0.37);
+}
+
+.task-column h2 {
+    margin: 0;
+}
+.task-card {
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(18, 31, 104, 0.377);
+    
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el texto de la tarea */
+.task-card .task-text {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los botones de acción */
+.task-card .task-actions {
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.task-card .task-actions button {
+    margin-left: 1px;
+    cursor: pointer;
+    
+}
+
+
+#taskInput{
+    border-radius: 15px;
+}
